@@ -117,3 +117,86 @@
 # 6054
 # a, b = map(int, input().split(" "))
 # print(bool(a) or bool(b))
+
+# 6056 ***
+# a, b = map(int, input().split())
+
+# if a+b != 0 and a*b == 0:
+#     print(bool(1))
+# else:
+#     print(bool(0))
+
+# 6057 ***
+# a, b = map(int, input().split(" "))
+# if a*b != 0 or a+b == 0:
+#     print(bool(1))
+# else:
+#     print(bool(0))
+
+# 6058
+# a, b = map(int, input().split(" "))
+# if a == 0 and b == 0:
+#     print(bool(1))
+# else:
+#     print(bool(0))
+
+# 비트단위 : 2진수로서 값을 계산 ***
+# 1. ~ : not
+# 2. & : and
+# 3. | : or
+# 4. ^ : xor : 배타적 논리합, 서로 다를 때 '1' 같으면 '0'
+# 5. <<, >>
+
+# 6059 :
+# a = int(input())
+# print(~a)
+
+# 6060
+# a, b = map(int, input().split(" "))
+# print(a ^ b)
+
+# 6063 : 삼항연산 ***
+# [true_value] if [condition] else [false_value]
+# a, b, c = map(int, input().split(" "))
+# print(a if a < b and a < c else (b if b < a and b < c else c))
+
+# 4. 조건 ----- ----- ----- ----- ----- -----
+# a = int(input())
+# def jjack(i):
+#     if i == 12 or i == 1 or i == 2:
+#         print("winter")
+#     elif i == 3 or i == 4 or i == 5:
+#         print("spring")
+#     elif i == 6 or i == 7 or i == 8:
+#         print("summer")
+#     else:
+#         print("fall")
+# jjack(a)
+
+# 5. 반복 ----- ----- ----- ----- ----- -----
+# 6071
+# a = 1
+# while a:
+#     n = int(input())
+#     if n == 0:
+#         a = 0
+#     else:
+#         print(n)
+
+# 6072 : 카운트다운
+# a = int(input())
+
+# for i in range(a):
+#     print(a-i)
+
+# 6073 : 문자 하나를 입력하여 a ~ 입력문자까지 출력
+# character = input()
+
+# for i in range(ord('a'), ord(character)+1):
+#     print(chr(i), end=" ")
+
+# 6075 :
+a = int(input())
+
+for i in range(0, a+1):
+    print(i)
