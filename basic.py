@@ -200,3 +200,85 @@
 
 # for i in range(0, a+1):
 #     print(i)
+
+
+# 6. 종합 ----- ----- ----- ----- ----- -----
+# 6077 : 0부터 입력한 숫자까지 짝수의 합
+# a = int(input())
+# n = 0
+
+# for i in range(1, a+1):
+#     if i % 2 == 0:
+#         n = n + i
+# print(n)
+
+# 6078 : 1부터 계속 더해서 입력한 숫자까지 가기 **
+# a = int(input())
+# m = 1
+# n = 1
+
+# while m < a:
+#     n += 1
+#     m += n
+# print(n)
+
+# 6079
+# n, m = map(int, input().split(" "))
+# for i in range(1, n+1):
+#     for j in range(1, m+1):
+#         print(i, j)
+
+# 6081 : 진수 연산 ***
+# a = int(input(), 16)
+# for i in range(1, 16):
+#     print("{0:X}*{1:X}={2:X}".format(a, i, a*i))
+
+# 6082 : 369 게임
+# a = int(input())
+# for i in range(1, a+1):
+#     if i < 10:
+#         if i % 3 == 0:
+#             print("X", end=" ")
+#         else:
+#             print(i, end=" ")
+#     else:
+#         if (i//10) % 3 == 0 and ((i % 10) % 3 == 0 and (i % 10) != 0):
+#             print("XX", end=" ")
+#         elif (i//10) % 3 == 0 or ((i % 10) % 3 == 0 and (i % 10) != 0):
+#             print("X", end=" ")
+#         else:
+#             print(i, end=" ")
+
+# 6083 : 삼중 for구문은 너무 시간이 많이 드는데??
+# r, g, b = map(int, input().split(" "))
+
+# for i in range(r):
+#     for j in range(g):
+#         for k in range(b):
+#             print(i, j, k)
+# print(r*g*b)
+
+# 6084
+# h, b, c, s = map(float, input().split(" "))
+# print("{0:.1f} MB".format((h*b*c*s)/(8*(1024**2))))
+
+# 6085
+# w, h, b = map(int, input().split(" "))
+# print("{0:.2f} MB".format((w*h*b)/(8*1024*1024)))
+
+# 6087 :
+# a, m, d, n = map(int, input().split(" "))
+# for i in range(n-1):
+#     a = a*m+d
+# print(a)
+
+# 6091 :
+# a, b, c = map(int, input().split(" "))
+# d = 1
+# n = 1
+# while n:
+#     if d % a == 0 and d % b == 0 and d % c == 0:
+#         print(d)
+#         n = 0
+#     else:
+#         d += 1
